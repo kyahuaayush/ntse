@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1.0" />
+    <title>Swastik Classes NTSE Webinar</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!--Bootstrap CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- jquery+Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+      :root {
+        --react-color: #DC3839;
+        --vue-color: #FFCC00;
+        --angular-color: #DC3839;
+      }
+      html,
+body {
+  width: 100%;
+  margin: 0
+}
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        
+        background: #013E4A;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+/* CARD CSS */
+      .card {
+        width: 450px;
+        height: 155px;
+        background: #fff;
+        margin: 50px auto;
+        overflow-x: hidden;
+        z-index: 10;
+        overflow-y: hidden;
+        border: 0;
+        border-radius: 20px;
+        
+      }
+
+      .skewed {
+        position: absolute;
+        width: 120px;
+        height: 120%;
+        background-color: rgba(46, 139, 86, 0.616);
+        transform: skewX(25deg) translateX(-30px) scaleX(1);
+        transform-origin: left;
+       
+}
+
+      .card-area {
+        position: relative;
+      }
+
+      .card-area:hover .skewed {
+        transform: skewX(25deg) translateX(-30px) scaleX(1);
+      }
+
+      .avatar {
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .media {
+        position: absolute;
+        width: 80%;
+        height: 45px;
+        background: #bbb;
+        left: 50%;
+        transform: translateX(-50%) translateY(-45px);
+        transition: transform 250ms ease-out;
+        display: grid;
+        place-items: center;
+        z-index: 5;
+      }
+
+      .list {
+        
+      }
+
+      .item {
+        margin: 0 1rem;
+      }
+
+      .link {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      .card-area:hover .media {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .content {
+        margin-top: 0.7rem;
+        margin-left: 9rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .content h1,
+      h6 {
+        font-weight: 100;
+      }
+
+      .content h1 {
+        font-size: 2.2rem;
+      }
+
+      .content h6 {
+        font-size: 1rem;
+      }
+
+      .esp {
+        font-size: 1.05rem;
+      }
+
+      .bg-react {
+        background: var(--react-color);
+      }
+
+      .bg-vue {
+        background: var(--vue-color);
+      }
+
+      .bg-angular {
+        background: var(--angular-color);
+      }
+
+      .text-react {
+        color: var(--react-color);
+      }
+
+      .text-vue {
+        color: var(--vue-color);
+      }
+
+      .text-angular {
+        color: var(--angular-color);
+      }
+
+      .color-white {
+        color: #fff;
+      }
+/* HEADING CSS */
+      .header img {
+        width: 300px;
+        margin: 35px 100px;
+      }
+/*HEADER CSS   */
+.ntse header{
+  padding: 50px 120px;
+  font-family: Segoe UI, sans-serif;
+}
+.button {
+ display: block;
+  margin-left: 150px;
+  background-color: #013E4A;
+  border-color: #fff;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+}
+.button:active{
+  background-color: #fff;
+  color: black;
+  background-color: #fff;
+}
+.ntse p{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+/* card css for desktop */
+@media (min-width: 950px ) {
+.speakers{
+  position: absolute;
+  left: 700px;
+  top: 10px;
+}
+  
+}
+
+/* resposive */
+@media (max-width:930px) {
+  .header{
+    display: block;
+    margin: auto;
+  }
+  .header img{
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .heading img{
+    display: block;
+    width: ;
+    margin: auto;
+    padding-top: 20px;
+
+  }
+}
+    </style>
+    <div class="header">
+      <img src="https://www.swastikclasses.com/wp-content/uploads/2020/05/logo.png" />
+    </div>
+    <div class="row heading">
+      <div class="col-lg-6 ntse">
+        <img src="https://www.swastikclasses.com/toppers.png" style="padding: 50px 120px; width: 700px;" alt="">
+       <p></p>
+       <div class="but">
+        <button type="button" class="button btn btn-outline-light">Register now</button>
+       </div>
+  
+      
+        
+      </div>
+      <div class="col-lg-6 speakers">
+        
+<div class="card-area">
+  <div class="card">
+    <img class="avatar" src="https://swastikclasses.com/aditi.png" alt="person1">
+    <div class="skewed bg-react"></div>
+
+    <div class="content">
+      <h1>Aditi Singh</h1>
+      <h6>IIT Delhi 3rd Year</h6>
+      <p class="esp text-react">Cleared stage 1 and 2</p>
+    </div>
+  </div>
+  
+</div>
+
+<div class="card-area">
+  <div class="card">
+    <img class="avatar" src="https://swastikclasses.com/amit.png" alt="person2">
+    <div class="skewed bg-vue"></div>
+
+    <div class="content">
+      <h1>Amit Shekhar</h1>
+      <h6>IIT Delhi 2nd Year</h6>
+      <p class="esp text-vue">Cleared stage 1</p>
+    </div>
+  </div>
+ 
+</div>
+
+<div class="card-area">
+  <div class="card">
+    <img class="avatar" src="https://swastikclasses.com/saurabh.png" alt="person3">
+    <div class="skewed bg-angular"></div>
+
+    <div class="content">
+      <h1>Saurabh Baranwal</h1>
+      <h6>IIT Guwahati 2nd Year</h6>
+      <p class="esp text-angular">Cleared stage 1</p>
+    </div>
+  </div>
+  
+</div>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>
